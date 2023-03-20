@@ -3,8 +3,8 @@ import random
 
 # Задаем массив формы снежинки
 flake = ["red", "orange", "yellow", "green", "blue", "purple", "white", "gray"]
-branches = 6
-branch_len = 75
+branches = 5
+branch_len = 10
 
 # Создаем экран и черепашку
 wn = turtle.Screen()
@@ -14,7 +14,7 @@ t.speed(0)
 
 # Функция для рисования одной ветви снежинки
 def branch():
-    for i in range(3):
+    for i in range(10):
         t.color(random.choice(flake))
         for j in range(3):
             t.forward(branch_len)
@@ -34,3 +34,4 @@ for i in range(branches):
 # Заканчиваем рисование
 t.hideturtle()
 wn.exitonclick()
+
