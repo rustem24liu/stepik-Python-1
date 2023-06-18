@@ -1,13 +1,14 @@
-def modify_list(l):
-    i = 0
-    while i < len(l):
-        if l[i] % 2 == 0:
-            l[i] //= 2
-            i += 1
-        else:
-            del l[i]
-        return l
-# arr = [1,2,3,4,5,6]
-# (modify_list(arr))
-# print(arr)
-# # print(modify_list(arr))
+lst = [1, 3,5, 7]
+
+
+def modify_list(lst):
+    for i in range(len(lst)-1, -1, -1):
+        if lst[i]%2!=0:
+            lst.pop(i)
+    for i in range(len(lst)):
+        lst[i]//=2
+    
+    print(lst)
+
+modify_list(lst)
+# modify_list(lst)
