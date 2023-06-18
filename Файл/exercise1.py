@@ -40,7 +40,3 @@ for i in range(len(first)):
 
 with open("output.txt", "w") as out:
     out.write(result)
-
-
-
-
